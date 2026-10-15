@@ -16,7 +16,7 @@ El circuito esta dividido en dos secciones principales: lectura de sensor NTC y 
 
 ### Componentes y Conexiones
 1. **Etapa de Lectura (Termistor):**
-   * Termistor NTC ($R_t = f(t)$) en configuracion de divisor de tension con resistencia de referencia $R_2 = 10\text{ k}\Omega$.
+   * Termistor NTC (R_t = f(t)) en configuracion de divisor de tension con resistencia de referencia $R_2 = 10\text{ k}\Omega$.
    * Punto de lectura conectado a la entrada analogica `A0` del Arduino.
 2. **Etapa de Potencia (Calentador):**
    * Transistor NPN de potencia TIP120 o TIP122.
