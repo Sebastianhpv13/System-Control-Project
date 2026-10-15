@@ -12,7 +12,7 @@ El controlador ajusta continuamente la potencia entregada a un elemento calefact
 
 El circuito esta dividido en dos secciones principales: lectura de sensor NTC y etapa de potencia para el elemento calefactor.
 
-![Esquema del Circuito](https://raw.githubusercontent.com/username/repository/main/schematic.png)
+<img width="1460" height="866" alt="image" src="https://github.com/user-attachments/assets/e990f73e-5f6c-461f-8255-248ec607f89c" />
 
 ### Componentes y Conexiones
 1. **Etapa de Lectura (Termistor):**
