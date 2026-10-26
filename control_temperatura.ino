@@ -6,7 +6,7 @@ const float NOMINAL_RESISTANCE = 10000.0;
 const float NOMINAL_TEMPERATURE = 25.0;  
 const float B_COEFFICIENT = 3950.0;      
 
-float Kp = 4.0;   
+float Kp = 6.0;   
 float Ki = 0.15;  
 float Kd = 0.0;   
 
@@ -77,7 +77,7 @@ float leerTemperatura() {
   }
   float rawADC = sumaADC / 15.0;
 
-  if (rawADC <= 5) return -10.0;     
+  if (rawADC <= 5) return -10.0;    
   if (rawADC >= 1018) return 100.0;  
 
   float resistencia = R_DIVISOR * ((1023.0 - rawADC) / rawADC);
@@ -89,8 +89,6 @@ float leerTemperatura() {
   steinhart += 1.0 / (NOMINAL_TEMPERATURE + 273.15);
   steinhart = 1.0 / steinhart;
   steinhart -= 273.15;
-
-  steinhart += 25.0; 
 
   return steinhart;
 }
